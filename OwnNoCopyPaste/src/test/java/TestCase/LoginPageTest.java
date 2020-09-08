@@ -1,5 +1,8 @@
 package TestCase;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -33,7 +36,7 @@ public class LoginPageTest  {
 		loginPage.setTxtEmail("");
 		loginPage.setTxtPassword("");
 		loginPage.clickonLogIn();
-		Assert.assertEquals(loginPage.getLblEmailError(), loginPage.lblEmailErrortxt,"Validation Error-----");
+		AssertJUnit.assertEquals(loginPage.getLblEmailError(), loginPage.lblEmailErrortxt,"Validation Error-----");
 
 	}
 	
@@ -43,7 +46,7 @@ public class LoginPageTest  {
 		loginPage.setTxtPassword("");
 		loginPage.clickonLogIn();
 		
-		Assert.assertTrue(loginPage.getlblLoginSummaryError().contains(loginPage.lblLoginSummaryErrortxt));
+		AssertJUnit.assertTrue(loginPage.getlblLoginSummaryError().contains(loginPage.lblLoginSummaryErrortxt));
 		
 	}
 	
@@ -52,8 +55,8 @@ public class LoginPageTest  {
 		//loginPage.setTxtEmail();
 		//loginPage.setTxtPassword();
 		loginPage.clickonLogIn(TestBase.getProperty("emailid"),TestBase.getProperty("password"));
-		Assert.assertEquals(homePage.getTitle(), homePage.DashboadPageTitle,"Login Failed--------");
-		Assert.assertEquals(homePage.getUserName(), homePage.lblUserNametxt, "Invalid Logged in User Name in Header.");
+		AssertJUnit.assertEquals(homePage.getTitle(), homePage.DashboadPageTitle,"Login Failed--------");
+		AssertJUnit.assertEquals(homePage.getUserName(), homePage.lblUserNametxt, "Invalid Logged in User Name in Header.");
 
 	}
 

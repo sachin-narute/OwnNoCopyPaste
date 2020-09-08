@@ -1,5 +1,8 @@
 package TestCase;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -34,7 +37,7 @@ public class HomePageTest {
 	@Test
 	public void Logouttest(){
 		homePage.clickOnLogout();
-		Assert.assertEquals(loginPage.getTitle(), loginPage.loginPageTitle,"Error on logout-----------");
+		AssertJUnit.assertEquals(loginPage.getTitle(), loginPage.loginPageTitle,"Error on logout-----------");
 	}
 	
 	@Test
@@ -44,12 +47,12 @@ public class HomePageTest {
 	
 	@Test
 	public void validateLoggedInUserNametest(){
-			Assert.assertEquals(homePage.getUserName(), homePage.lblUserNametxt, "Invalid Logged in User Name in Header.");		
+			AssertJUnit.assertEquals(homePage.getUserName(), homePage.lblUserNametxt, "Invalid Logged in User Name in Header.");		
 	}
 		
 	@Test
 	public void validateHideUnhideMenubartest(){
-			Assert.assertEquals(homePage.getUserName(), homePage.lblUserNametxt, "Invalid Logged in User Name in Header.");		
+			AssertJUnit.assertEquals(homePage.getUserName(), homePage.lblUserNametxt, "Invalid Logged in User Name in Header.");		
 	}
 	
 	@Test
