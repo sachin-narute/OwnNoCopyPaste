@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="3" failed="0" total="9" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="491246" started-at="2020-09-08T14:21:20Z" finished-at="2020-09-08T14:29:31Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="491246" started-at="2020-09-08T14:21:20Z" finished-at="2020-09-08T14:29:31Z">
+      <class name="TestCase.HomePageTest">
+        <test-method status="PASS" signature="preReq()[pri:0, instance:TestCase.HomePageTest@11be3c5]" name="preReq" is-config="true" duration-ms="30721" started-at="2020-09-08T19:54:01Z" finished-at="2020-09-08T19:54:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preReq -->
+        <test-method status="PASS" signature="Logouttest()[pri:0, instance:TestCase.HomePageTest@11be3c5]" name="Logouttest" duration-ms="2440" started-at="2020-09-08T19:54:31Z" finished-at="2020-09-08T19:54:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logouttest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCase.HomePageTest@11be3c5]" name="tearDown" is-config="true" duration-ms="10560" started-at="2020-09-08T19:54:34Z" finished-at="2020-09-08T19:54:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="preReq()[pri:0, instance:TestCase.HomePageTest@11be3c5]" name="preReq" is-config="true" duration-ms="44110" started-at="2020-09-08T19:54:44Z" finished-at="2020-09-08T19:55:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preReq -->
+        <test-method status="PASS" signature="clearCatchetest()[pri:0, instance:TestCase.HomePageTest@11be3c5]" name="clearCatchetest" duration-ms="2883" started-at="2020-09-08T19:55:28Z" finished-at="2020-09-08T19:55:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearCatchetest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCase.HomePageTest@11be3c5]" name="tearDown" is-config="true" duration-ms="16518" started-at="2020-09-08T19:55:31Z" finished-at="2020-09-08T19:55:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="preReq()[pri:0, instance:TestCase.HomePageTest@11be3c5]" name="preReq" is-config="true" duration-ms="57560" started-at="2020-09-08T19:55:48Z" finished-at="2020-09-08T19:56:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preReq -->
+        <test-method status="PASS" signature="validateHideUnhideMenubartest()[pri:0, instance:TestCase.HomePageTest@11be3c5]" name="validateHideUnhideMenubartest" duration-ms="161" started-at="2020-09-08T19:56:45Z" finished-at="2020-09-08T19:56:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHideUnhideMenubartest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCase.HomePageTest@11be3c5]" name="tearDown" is-config="true" duration-ms="16371" started-at="2020-09-08T19:56:46Z" finished-at="2020-09-08T19:57:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="preReq()[pri:0, instance:TestCase.HomePageTest@11be3c5]" name="preReq" is-config="true" duration-ms="59669" started-at="2020-09-08T19:57:02Z" finished-at="2020-09-08T19:58:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preReq -->
+        <test-method status="PASS" signature="validateLoggedInUserNametest()[pri:0, instance:TestCase.HomePageTest@11be3c5]" name="validateLoggedInUserNametest" duration-ms="1290" started-at="2020-09-08T19:58:02Z" finished-at="2020-09-08T19:58:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoggedInUserNametest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCase.HomePageTest@11be3c5]" name="tearDown" is-config="true" duration-ms="16120" started-at="2020-09-08T19:58:03Z" finished-at="2020-09-08T19:58:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="preReq()[pri:0, instance:TestCase.HomePageTest@11be3c5]" name="preReq" is-config="true" duration-ms="43351" started-at="2020-09-08T19:58:19Z" finished-at="2020-09-08T19:59:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preReq -->
+        <test-method status="PASS" signature="validateNavigtiontocustomermenutest()[pri:0, instance:TestCase.HomePageTest@11be3c5]" name="validateNavigtiontocustomermenutest" duration-ms="3420" started-at="2020-09-08T19:59:02Z" finished-at="2020-09-08T19:59:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateNavigtiontocustomermenutest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCase.HomePageTest@11be3c5]" name="tearDown" is-config="true" duration-ms="25330" started-at="2020-09-08T19:59:06Z" finished-at="2020-09-08T19:59:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCase.HomePageTest -->
+      <class name="TestCase.LoginPageTest">
+        <test-method status="FAIL" signature="preReq()[pri:0, instance:TestCase.LoginPageTest@15435c]" name="preReq" is-config="true" duration-ms="0" started-at="2020-09-08T19:51:20Z" finished-at="2020-09-08T19:51:20Z">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'URMILA-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_202'
+Driver info: driver.version: FirefoxDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'URMILA-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_202'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:603)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:136)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:188)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:176)
+	at BaseTest.TestBase.initialization(TestBase.java:95)
+	at TestCase.LoginPageTest.preReq(LoginPageTest.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
+	at org.testng.TestNG.run(TestNG.java:1009)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:47)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:55)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+	... 32 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:36510 after 60000 ms
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
+	... 43 more
+Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:36510 after 60000 ms
+	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
+	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:747)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:472)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preReq -->
+        <test-method status="SKIP" signature="LoginWithValidUsernamePasswordtest()[pri:0, instance:TestCase.LoginPageTest@15435c]" name="LoginWithValidUsernamePasswordtest" duration-ms="0" started-at="2020-09-08T19:52:23Z" finished-at="2020-09-08T19:52:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithValidUsernamePasswordtest -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:TestCase.LoginPageTest@15435c]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-09-08T19:52:23Z" finished-at="2020-09-08T19:52:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="preReq()[pri:0, instance:TestCase.LoginPageTest@15435c]" name="preReq" is-config="true" duration-ms="0" started-at="2020-09-08T19:52:23Z" finished-at="2020-09-08T19:52:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preReq -->
+        <test-method status="SKIP" signature="LoginWithBlankUsernamePasswordtest()[pri:0, instance:TestCase.LoginPageTest@15435c]" name="LoginWithBlankUsernamePasswordtest" duration-ms="0" started-at="2020-09-08T19:52:23Z" finished-at="2020-09-08T19:52:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithBlankUsernamePasswordtest -->
+        <test-method status="SKIP" signature="LoginWithValidUsernameBlankPasswordtest()[pri:0, instance:TestCase.LoginPageTest@15435c]" name="LoginWithValidUsernameBlankPasswordtest" duration-ms="0" started-at="2020-09-08T19:52:23Z" finished-at="2020-09-08T19:52:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithValidUsernameBlankPasswordtest -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:TestCase.LoginPageTest@15435c]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-09-08T19:52:23Z" finished-at="2020-09-08T19:52:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:TestCase.LoginPageTest@15435c]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-09-08T19:52:23Z" finished-at="2020-09-08T19:52:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="preReq()[pri:0, instance:TestCase.LoginPageTest@15435c]" name="preReq" is-config="true" duration-ms="0" started-at="2020-09-08T19:52:23Z" finished-at="2020-09-08T19:52:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preReq -->
+      </class> <!-- TestCase.LoginPageTest -->
+      <class name="TestCase.CustomerPageTest">
+        <test-method status="PASS" signature="preReq()[pri:0, instance:TestCase.CustomerPageTest@61f5df]" name="preReq" is-config="true" duration-ms="77399" started-at="2020-09-08T19:52:23Z" finished-at="2020-09-08T19:53:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preReq -->
+        <test-method status="PASS" signature="validateNavigtiontocustomermenutest()[pri:0, instance:TestCase.CustomerPageTest@61f5df]" name="validateNavigtiontocustomermenutest" duration-ms="2580" started-at="2020-09-08T19:53:41Z" finished-at="2020-09-08T19:53:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateNavigtiontocustomermenutest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCase.CustomerPageTest@61f5df]" name="tearDown" is-config="true" duration-ms="17450" started-at="2020-09-08T19:53:43Z" finished-at="2020-09-08T19:54:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCase.CustomerPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

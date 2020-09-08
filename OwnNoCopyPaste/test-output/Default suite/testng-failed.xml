@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="TestCase.LoginPageTest">
+        <methods>
+          <include name="LoginWithValidUsernameBlankPasswordtest"/>
+          <include name="preReq"/>
+          <include name="LoginWithValidUsernamePasswordtest"/>
+          <include name="LoginWithBlankUsernamePasswordtest"/>
+        </methods>
+      </class> <!-- TestCase.LoginPageTest -->
+      <class name="TestCase.CustomerPageTest">
+        <methods>
+          <include name="preReq"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCase.CustomerPageTest -->
+      <class name="TestCase.HomePageTest">
+        <methods>
+          <include name="preReq"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCase.HomePageTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
