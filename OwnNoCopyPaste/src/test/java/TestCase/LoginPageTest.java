@@ -36,7 +36,7 @@ public class LoginPageTest  {
 		loginPage.setTxtEmail("");
 		loginPage.setTxtPassword("");
 		loginPage.clickonLogIn();
-		AssertJUnit.assertEquals(loginPage.getLblEmailError(), loginPage.lblEmailErrortxt,"Validation Error-----");
+		Assert.assertEquals(loginPage.getLblEmailError(), loginPage.lblEmailErrortxt,"Validation Error-----");
 
 	}
 	
@@ -46,7 +46,7 @@ public class LoginPageTest  {
 		loginPage.setTxtPassword("");
 		loginPage.clickonLogIn();
 		
-		AssertJUnit.assertTrue(loginPage.getlblLoginSummaryError().contains(loginPage.lblLoginSummaryErrortxt));
+		Assert.assertTrue(loginPage.getlblLoginSummaryError().contains(loginPage.lblLoginSummaryErrortxt));
 		
 	}
 	
@@ -55,8 +55,8 @@ public class LoginPageTest  {
 		//loginPage.setTxtEmail();
 		//loginPage.setTxtPassword();
 		loginPage.clickonLogIn(TestBase.getProperty("emailid"),TestBase.getProperty("password"));
-		AssertJUnit.assertEquals(homePage.getTitle(), homePage.DashboadPageTitle,"Login Failed--------");
-		AssertJUnit.assertEquals(homePage.getUserName(), homePage.lblUserNametxt, "Invalid Logged in User Name in Header.");
+		Assert.assertEquals(homePage.getTitle(), homePage.DashboadPageTitle,"Login Failed--------");
+		Assert.assertEquals(homePage.getUserName(), homePage.lblUserNametxt, "Invalid Logged in User Name in Header.");
 
 	}
 

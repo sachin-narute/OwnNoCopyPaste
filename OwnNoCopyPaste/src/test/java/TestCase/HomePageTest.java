@@ -37,7 +37,7 @@ public class HomePageTest {
 	@Test
 	public void Logouttest(){
 		homePage.clickOnLogout();
-		AssertJUnit.assertEquals(loginPage.getTitle(), loginPage.loginPageTitle,"Error on logout-----------");
+		Assert.assertEquals(loginPage.getTitle(), loginPage.loginPageTitle,"Error on logout-----------");
 	}
 	
 	@Test
@@ -47,12 +47,12 @@ public class HomePageTest {
 	
 	@Test
 	public void validateLoggedInUserNametest(){
-			AssertJUnit.assertEquals(homePage.getUserName(), homePage.lblUserNametxt, "Invalid Logged in User Name in Header.");		
+		Assert.assertEquals(homePage.getUserName(), homePage.lblUserNametxt, "Invalid Logged in User Name in Header.");		
 	}
 		
 	@Test
 	public void validateHideUnhideMenubartest(){
-			AssertJUnit.assertEquals(homePage.getUserName(), homePage.lblUserNametxt, "Invalid Logged in User Name in Header.");		
+		Assert.assertEquals(homePage.getUserName(), homePage.lblUserNametxt, "Invalid Logged in User Name in Header.");		
 	}
 	
 	@Test
