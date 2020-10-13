@@ -26,8 +26,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class TestBase {
 
-
-
 	public static WebDriver driver;
 	public static FileInputStream fis;
 	public static Properties prop;
