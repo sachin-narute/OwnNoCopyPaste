@@ -1,5 +1,7 @@
 package BaseTest;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -24,26 +26,13 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class TestBase {
 
+
+
 	public static WebDriver driver;
 	public static FileInputStream fis;
 	public static Properties prop;
-	
-	
 
-/*	public static void main(String[] args) {
-		//String url=TestBase.getProperty("url");
-		//System.out.println(url);
-		//String browser=TestBase.getProperty("browser");
-		//System.out.println(browser);
-
-		TestBase.initialization();
-		TestBase.takeScreenShot();
-
-		driver.quit();
-
-	}*/
-
-	public static void initialization(){
+	public static WebDriver initialization(){
 
 		String browser=TestBase.getProperty("browser");
 		String testUrl=TestBase.getProperty("url");
@@ -52,8 +41,8 @@ public class TestBase {
 
 		if (browser.equalsIgnoreCase("chrome")) {
 
-			String browserPath = System.getProperty("user.dir")+"\\BrowserDrivers\\chromedriver.exe";
-			
+			/*			String browserPath = System.getProperty("user.dir")+"\\BrowserDrivers\\chromedriver.exe";
+
 			// Create object of ChromeOptions class
 			// Chrome options class is used to manipulate various properties of Chrome driver
 			ChromeOptions options = new ChromeOptions();
@@ -64,21 +53,28 @@ public class TestBase {
 			options.setAcceptInsecureCerts(true);
 			options.setExperimentalOption("excludeSwitches",Arrays.asList("disable-popup-blocking")); //Block pop-up windows
 			options.setCapability("webdriver.chrome.driver", browserPath);
-			
+
 			//Create an object of Desired Capabilities class and merge the Desired Capabilities class object 
 			//with Chrome Options class object using merge method
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 			options.merge(capabilities);
-			
-			
-			
+
+
+
 			System.setProperty("webdriver.chrome.driver", browserPath);
-			driver=new ChromeDriver(options);
+			driver=new ChromeDriver(options);*/
+
+			WebDriverManager.chromedriver().setup();
+
+			driver=new ChromeDriver();
+
+
+
 
 		} else if(browser.equalsIgnoreCase("firefox")) {
 
-			System.out.println("Firefox Browser");
+			/*	System.out.println("Firefox Browser");
 
 			//It create firefox profile
 			FirefoxProfile profile=new FirefoxProfile();
@@ -94,13 +90,22 @@ public class TestBase {
 			System.setProperty("webdriver.gecko.driver", browserPath);
 			driver=new FirefoxDriver(firefoxOptions);
 			//How to remove log statements in console:
-			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"null");
+			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"null");*/
+
+			WebDriverManager.firefoxdriver().setup();
+
+			driver=new FirefoxDriver();
+
 
 		} else if(browser.equalsIgnoreCase("IE")) {
 
-			System.out.println("Internet Explorer Browser"); 
+			/*System.out.println("Internet Explorer Browser"); 
 			String browserPath = System.getProperty("user.dir")+"\\BrowserDrivers\\IEDriverServer.exe";
 			System.setProperty("webdriver.ie.driver", browserPath);
+			driver=new InternetExplorerDriver();*/
+
+			WebDriverManager.iedriver().setup();
+
 			driver=new InternetExplorerDriver();
 
 		} else {
@@ -111,6 +116,8 @@ public class TestBase {
 		driver.get(testUrl);
 		driver.manage().timeouts().implicitlyWait(implicitlyWait, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(pageLoadTimeout, TimeUnit.SECONDS);
+
+		return driver;
 	}
 
 	public static String getProperty(String Name){
@@ -152,4 +159,7 @@ public class TestBase {
 			e.printStackTrace();
 		}
 	}
+
+
+
 }
