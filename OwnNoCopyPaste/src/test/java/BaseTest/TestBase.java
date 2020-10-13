@@ -67,9 +67,6 @@ public class TestBase {
 
 			driver=new ChromeDriver();
 
-
-
-
 		} else if(browser.equalsIgnoreCase("firefox")) {
 
 			/*	System.out.println("Firefox Browser");
