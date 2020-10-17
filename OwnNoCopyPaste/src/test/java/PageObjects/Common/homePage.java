@@ -32,7 +32,8 @@ public class homePage extends TestBase{
 
 	public Object result;
 	
-	public homePage() {
+	public homePage(WebDriver driver) {
+		driver=this.driver;
 		PageFactory.initElements(driver, this);
 	}
 
@@ -91,7 +92,7 @@ public class homePage extends TestBase{
 
 	public loginPage clickOnLogout(){
 		linkLogout.click();
-		return new loginPage();
+		return new loginPage(driver);
 	}
 
 	public void clearCatche(){

@@ -1,5 +1,8 @@
 package TestCase;
 
-public class DashboardPageTest {
+import org.openqa.selenium.WebDriver;
 
+public class DashboardPageTest {
+	WebDriver driver;
+	
 }

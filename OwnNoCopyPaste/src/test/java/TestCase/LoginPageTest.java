@@ -17,17 +17,15 @@ public class LoginPageTest  {
 	
 	loginPage loginPage;
 	homePage homePage;
-
-	/*public LoginPageTest() {
-		super();
-	}*/
+	WebDriver driver;
+	
 
 	@BeforeMethod
 	public void preReq(){
-		TestBase TestBase=new TestBase();
+		//TestBase TestBase=new TestBase();
 		TestBase.initialization();
-		loginPage=new loginPage();
-		homePage=new homePage();
+		loginPage=new loginPage(driver);
+		homePage=new homePage(driver);
 	}
 
 	@Test

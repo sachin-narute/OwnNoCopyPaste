@@ -8,8 +8,11 @@ import org.openqa.selenium.support.PageFactory;
 import BaseTest.TestBase;
 
 public class loginPage extends TestBase{
+	
+	
 
-	public loginPage() {
+	public loginPage(WebDriver driver) {
+		driver=this.driver;
 		PageFactory.initElements(driver, this);
 	}
 
@@ -84,14 +87,14 @@ public class loginPage extends TestBase{
 	
 	public homePage clickonLogIn(){
 		btnLogIn.click();
-		return new homePage();
+		return new homePage(driver);
 	}
 	
 	public homePage clickonLogIn(String email, String pwd){
 		setTxtEmail(email);
 		setTxtPassword(pwd);
 		btnLogIn.click();
-		return new homePage();
+		return new homePage(driver);
 	}
 
 	public String getTitle(){

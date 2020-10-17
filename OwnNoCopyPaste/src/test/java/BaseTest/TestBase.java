@@ -30,7 +30,7 @@ public class TestBase {
 	public static FileInputStream fis;
 	public static Properties prop;
 
-	public static WebDriver initialization(){
+	public static WebDriver initialization_old(){
 
 		String browser=TestBase.getProperty("browser");
 		String testUrl=TestBase.getProperty("url");
@@ -39,7 +39,7 @@ public class TestBase {
 
 		if (browser.equalsIgnoreCase("chrome")) {
 
-			/*			String browserPath = System.getProperty("user.dir")+"\\BrowserDrivers\\chromedriver.exe";
+			String browserPath = System.getProperty("user.dir")+"\\BrowserDrivers\\chromedriver.exe";
 
 			// Create object of ChromeOptions class
 			// Chrome options class is used to manipulate various properties of Chrome driver
@@ -58,18 +58,14 @@ public class TestBase {
 			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 			options.merge(capabilities);
 
-
-
 			System.setProperty("webdriver.chrome.driver", browserPath);
-			driver=new ChromeDriver(options);*/
+			driver=new ChromeDriver(options);
 
-			WebDriverManager.chromedriver().setup();
-
-			driver=new ChromeDriver();
+			
 
 		} else if(browser.equalsIgnoreCase("firefox")) {
 
-			/*	System.out.println("Firefox Browser");
+				System.out.println("Firefox Browser");
 
 			//It create firefox profile
 			FirefoxProfile profile=new FirefoxProfile();
@@ -85,23 +81,16 @@ public class TestBase {
 			System.setProperty("webdriver.gecko.driver", browserPath);
 			driver=new FirefoxDriver(firefoxOptions);
 			//How to remove log statements in console:
-			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"null");*/
-
-			WebDriverManager.firefoxdriver().setup();
-
-			driver=new FirefoxDriver();
+			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"null");
 
 
 		} else if(browser.equalsIgnoreCase("IE")) {
 
-			/*System.out.println("Internet Explorer Browser"); 
+			System.out.println("Internet Explorer Browser"); 
 			String browserPath = System.getProperty("user.dir")+"\\BrowserDrivers\\IEDriverServer.exe";
 			System.setProperty("webdriver.ie.driver", browserPath);
-			driver=new InternetExplorerDriver();*/
-
-			WebDriverManager.iedriver().setup();
-
 			driver=new InternetExplorerDriver();
+
 
 		} else {
 			System.out.println("Wrong bowser name in properties file...");
@@ -115,6 +104,42 @@ public class TestBase {
 		return driver;
 	}
 
+	
+	public static WebDriver initialization(){
+
+		String browser=TestBase.getProperty("browser");
+		String testUrl=TestBase.getProperty("url");
+		int implicitlyWait =Integer.parseInt(TestBase.getProperty("implicitlyWait"));
+		int pageLoadTimeout =Integer.parseInt(TestBase.getProperty("pageLoadTimeout"));
+
+		if (browser.equalsIgnoreCase("chrome")) {
+
+			WebDriverManager.chromedriver().setup();
+			driver=new ChromeDriver();
+
+		} else if(browser.equalsIgnoreCase("firefox")) {
+
+			WebDriverManager.firefoxdriver().setup();
+			driver=new FirefoxDriver();
+
+
+		} else if(browser.equalsIgnoreCase("IE")) {
+
+			WebDriverManager.iedriver().setup();
+			driver=new InternetExplorerDriver();
+
+		} else {
+			System.out.println("Wrong bowser name in properties file...");
+		}
+
+		driver.manage().window().maximize();
+		driver.get(testUrl);
+		driver.manage().timeouts().implicitlyWait(implicitlyWait, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(pageLoadTimeout, TimeUnit.SECONDS);
+
+		return driver;
+	}
+	
 	public static String getProperty(String Name){
 
 		prop=new Properties();

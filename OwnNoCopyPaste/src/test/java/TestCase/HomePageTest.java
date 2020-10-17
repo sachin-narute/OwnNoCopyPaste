@@ -1,5 +1,6 @@
 package TestCase;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
@@ -18,20 +19,15 @@ public class HomePageTest {
 	loginPage loginPage;
 	homePage homePage;
 	customersPage customersPage;
+	WebDriver driver;
 	
-
-	/*public LoginPageTest() {
-		super();
-	}*/
-
 	@BeforeMethod
 	public void preReq(){
-		TestBase TestBase=new TestBase();
+		//TestBase TestBase=new TestBase();
 		TestBase.initialization();
-		loginPage=new loginPage();
-		homePage=new homePage();
-		customersPage=new customersPage();
+		loginPage=new loginPage(driver);
 		loginPage.clickonLogIn(TestBase.getProperty("emailid"),TestBase.getProperty("password"));
+		homePage=new homePage(driver);
 	}
 
 	@Test
