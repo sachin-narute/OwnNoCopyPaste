@@ -17,8 +17,7 @@ public class LoginPageTest  {
 	
 	loginPage loginPage;
 	homePage homePage;
-	WebDriver driver;
-	
+	WebDriver driver;	
 
 	@BeforeMethod
 	public void preReq(){

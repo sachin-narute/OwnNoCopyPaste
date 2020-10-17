@@ -14,7 +14,7 @@ public class CustomerPageTest {
 	loginPage loginPage;
 	homePage homePage;
 	WebDriver driver;
-
+	
 	@BeforeMethod
 	public void preReq(){
 		//TestBase TestBase=new TestBase();

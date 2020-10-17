@@ -19,7 +19,7 @@ public class HomePageTest {
 	loginPage loginPage;
 	homePage homePage;
 	customersPage customersPage;
-	WebDriver driver;
+	WebDriver driver;	
 	
 	@BeforeMethod
 	public void preReq(){
